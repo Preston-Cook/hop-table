@@ -18,7 +18,7 @@ if len(sys.argv) != 2:
     print("Usage: hop_visialization.py \"url/ip\"")
     sys.exit(1)
 
-# Run Unix cmd and read from stdin
+# Run Unix cmd and read from stdout
 p = Popen(["traceroute", "-n", sys.argv[-1]], stdout=PIPE)
 
 hop_lst = []
