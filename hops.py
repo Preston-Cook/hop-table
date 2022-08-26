@@ -46,7 +46,7 @@ records = []
 
 # Check traceroute output for ip addresses
 for count, hop in enumerate(hop_lst, start=1):
-    if (match:= re.search(pattern, hop)):
+    if (match := re.search(pattern, hop)):
         ip = match.group(1)
 
         # Attempt API call with ip and token as params
